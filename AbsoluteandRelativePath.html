@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>HTML में Absolute Path और Relative Path का इस्तेमाल files (जैसे image, CSS, JS, या दूसरे pages) को link करने के लिए किया जाता है। नीचे आसान हिंदी में समझाया है 👇
+
+🔹 Absolute Path क्या होता है?
+
+Absolute Path में किसी file का पूरा address (complete URL) लिखा जाता है।
+इसमें protocol (https), domain name, और पूरा path होता है।
+
+👉 उदाहरण:
+<img src="https://www.example.com/images/logo.png">
+
+📌 समझिए:
+
+https://www.example.com → website का नाम
+
+/images/logo.png → image का पूरा रास्ता
+
+✅ फायदे:
+
+File कहीं भी हो, सही खुलेगी
+
+दूसरे server की file भी जोड़ सकते हैं
+
+❌ नुकसान:
+
+Internet जरूरी होता है
+
+Website बदलने पर link टूट सकता है
+
+🔹 Relative Path क्या होता है?
+
+Relative Path में file का रास्ता current file की location के हिसाब से बताया जाता है।
+इसमें domain या protocol नहीं होता।
+
+👉 उदाहरण:
+<img src="images/logo.png">
+
+📌 समझिए:
+
+मान लो आपकी HTML file और images folder एक ही जगह पर हैं
+
+तो browser खुद समझ लेता है रास्ता
+
+🔹 Relative Path के प्रकार
+1️⃣ Same Folder में file
+<img src="logo.png">
+
+2️⃣ Sub Folder में file
+<img src="images/logo.png">
+
+3️⃣ Parent Folder में file (../)
+<img src="../logo.png">
+
+4️⃣ Parent के अंदर दूसरे folder में
+<img src="../images/logo.png">
+
+🔹 Absolute vs Relative Path (Difference)
+Absolute Path	Relative Path
+पूरा URL होता है	Short path होता है
+Internet जरूरी	Offline भी चलता है
+बाहर की website की file	अपनी website की file
+ज्यादा लंबा	छोटा और आसान
+🔹 कब क्या इस्तेमाल करें?
+
+✅ Relative Path
+
+अपनी website के अंदर files जोड़ते समय
+
+Project बनाते समय (Best Practice)
+
+✅ Absol</div>
+</body>
+</html>
