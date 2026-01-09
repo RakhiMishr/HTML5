@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightsalmon;">
+    <div>नीचे मैं आपको HTML Attributes और Image (img) tag के height & width attributes को आसान हिंदी में समझा रहा हूँ 👇
+<hr>
+🔹 HTML Attributes क्या होते हैं?
+
+HTML Attributes किसी HTML element को extra जानकारी देने के लिए होते हैं।
+ये हमेशा opening tag के अंदर लिखे जाते हैं।
+
+👉 Syntax:
+<tagname attribute="value">Content</tagname>
+
+📌 उदाहरण:
+<p align="center">यह एक पैराग्राफ है</p>
+<hr>
+🔹 HTML Attributes के प्रकार
+
+1️⃣ Global Attributes
+
+जो लगभग सभी HTML elements में इस्तेमाल होते हैं।
+
+Attribute	काम
+id	Unique पहचान
+class	CSS/JS के लिए
+style	Inline CSS
+title	Hover पर text
+hidden	Element छुपाने के लिए
+2️⃣ Element Specific Attributes
+
+जो सिर्फ कुछ elements के लिए होते हैं।
+
+📌 जैसे:
+
+href → <a> tag
+
+src → <img> tag
+
+alt → <img> tag
+<hr>
+🔹 Image Tag (<img>) क्या है?
+
+HTML में image दिखाने के लिए <img> tag का उपयोग होता है।
+यह self-closing tag है।
+
+<img src="photo.jpg" alt="सुंदर पहाड़">
+<hr>
+🔹 Image के Height और Width Attributes
+👉 Height Attribute
+
+Image की ऊँचाई (height) सेट करता है।
+
+👉 Width Attribute
+
+Image की चौड़ाई (width) सेट करता है।
+
+📌 Example:
+<img src="OIP.jpeg" alt="प्रकृति का दृश्य" width="200" height="100">
+
+
+📍 यहाँ:
+
+width="300" → 300 pixels चौड़ी
+
+height="200" → 200 pixels ऊँची
+
+👉 Default unit = pixels (px)
+<hr>
+🔹 Sirf Width या Height देने पर क्या होगा?
+
+अगर आप सिर्फ एक attribute देंगे तो:
+
+Browser image का ratio बनाए रखेगा
+
+Image खराब (stretch) नहीं होगी
+
+<img src="OIP.jpeg" width="300">
+<hr>
+🔹 CSS vs HTML Height & Width
+
+❌ पुराने तरीके (HTML attributes):
+
+<img src="OIP.jpeg" width="200" height="150">
+
+
+✅ Modern तरीका (CSS):
+
+<img src="OIP.jpeg" style="width:200px; height:150px;">
+
+
+🎯 Best Practice:
+
+Layout के लिए CSS
+
+HTML सिर्फ structure के लिए
+<hr>
+🔹 Image Resize करते समय ध्यान रखें
+
+⚠️ Image को ज़्यादा stretch न करें
+⚠️ Original ratio बनाए रखें
+⚠️ SEO के लिए हमेशा alt attribute दें
+
+</body>
+</html>
