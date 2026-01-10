@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <div>HTML में Form Designing और Registration Form बहुत important होते हैं, क्योंकि इन्हीं से user से data collect किया जाता है (जैसे sign-up, login, admission form)। नीचे आसान हिंदी में पूरा समझाया है 👇
+
+🔹 HTML Form क्या होता है?
+
+HTML Form एक ऐसा structure है जिससे user अपनी जानकारी भरकर server को भेजता है।
+
+👉 Example:
+
+Registration Form
+
+Login Form
+
+Contact Form
+
+Form बनाने के लिए <form> tag का use होता है।
+
+🔹 Registration Form क्या होता है?
+
+Registration Form वह form होता है जिसमें user:
+
+नाम
+
+Email
+
+Password
+
+Gender
+
+Course
+जैसी जानकारी भरता है और register करता है।
+<hr>
+🔹 Form का Basic Structure
+<form>
+  <!-- form elements -->
+</form>
+<hr>
+🔹 Registration Form के Main Elements
+Tag	काम
+<form>	Form start/end
+<input>	User input
+<label>	Field का नाम
+<textarea>	लंबा text
+<select>	Dropdown
+<option>	Dropdown option
+<button>	Submit button
+    <hr>
+🔹 Simple Registration Form Example
+<h2>Registration Form</h2>
+
+<form>
+  <label>नाम:</label>
+  <input type="text" name="name"><br><br>
+
+  <label>Email:</label>
+  <input type="email" name="email"><br><br>
+
+  <label>Password:</label>
+  <input type="password" name="password"><br><br>
+
+  <label>Gender:</label>
+  <input type="radio" name="gender"> Male
+  <input type="radio" name="gender"> Female <br><br>
+
+  <label>Course:</label>
+  <select>
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavaScript</option>
+  </select><br><br>
+
+  <button type="submit">Register</button>
+</form>
+
+<hr>
+🔹 Input Types (बहुत ज़रूरी)
+Type	काम
+text	नाम
+email	Email
+password	Password
+radio	एक option
+checkbox	multiple option
+date	Date
+number	Number
+submit	Form भेजना
+<hr>
+🔹 Form Attributes
+Attribute	काम
+action	Data कहाँ जाएगा
+method	GET / POST
+required	जरूरी field
+placeholder	Hint text
+Example:
+<input type="text" required placeholder="अपना नाम लिखें">
+<hr>
+🔹 Form Designing (CSS से)
+<style>
+form {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+input, select {
+  width: 100%;
+  margin: 5px 0;
+}
+</style>
+<hr>
+🔹 GET vs POST (Short में)
+GET	POST
+URL में data	URL में नहीं
+कम secure	ज्यादा secure
+Search form	Registration form
+<hr>
+🔹 Summary
+
+📌 Form:
+
+User से data लेता है
+
+<form> tag से बनता है
+
+📌 Registration Form:
+
+User को register करने के लिए
+
+Input, radio, select, button का use
+
+अगर चाहो तो मैं इसे PDF notes, complete styled form, या interview questions के साथ भी बना दूँ 😊</div>
+</body>
+</html>
