@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightseagreen;">
+    <div>HTML में Tables का उपयोग data को rows और columns में दिखाने के लिए किया जाता है (जैसे marksheet, timetable, price list)। नीचे आसान हिंदी में पूरा समझाया गया है 👇
+<hr>
+🔹 HTML Table क्या होती है?
+
+HTML Table एक grid structure होती है जिसमें:
+
+Row (पंक्ति)
+
+Column (स्तंभ)
+होते हैं।
+<hr>
+🔹 Table बनाने के लिए मुख्य Tags
+Tag	काम
+<table>	पूरी table
+<tr>	Table row
+<th>	Table heading
+<td>	Table data
+<caption>	Table का title
+    <hr>
+🔹 Basic Table Example
+<table border="1">
+  <tr>
+    <th>नाम</th>
+    <th>क्लास</th>
+    <th>अंक</th>
+  </tr>
+  <tr>
+    <td>राहुल</td>
+    <td>10</td>
+    <td>85</td>
+  </tr>
+  <tr>
+    <td>सीमा</td>
+    <td>10</td>
+    <td>90</td>
+  </tr>
+</table>
+
+
+📌 border="1" → table की boundary दिखाने के लिए (पुराना तरीका)
+<hr>
+🔹 Table Caption (Title)
+<table border="1">
+  <caption>छात्रों की मार्कशीट</caption>
+  <tr>
+    <th>नाम</th>
+    <th>अंक</th>
+  </tr>
+  <tr>
+    <td>अमित</td>
+    <td>88</td>
+  </tr>
+</table>
+<hr>
+🔹 Table के Sections
+<thead>, <tbody>, <tfoot>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Mobile</td>
+      <td>15000</td>
+    </tr>
+    <tr>
+      <td>Laptop</td>
+      <td>50000</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>65000</td>
+    </tr>
+  </tfoot>
+</table>
+<hr>
+🔹 Column Merge (colspan)
+<tr>
+  <th colspan="2">Student Details</th>
+</tr>
+
+
+👉 2 columns को जोड़ देता है
+<hr>
+🔹 Row Merge (rowspan)
+<tr>
+  <th rowspan="2">Class 10</th>
+  <td>रवि</td>
+</tr>
+<tr>
+  <td>पूजा</td>
+</tr>
+
+
+👉 2 rows को जोड़ देता है
+<hr>
+🔹 Table Styling (CSS से – Best Practice)
+<style>
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+</style>
+<hr>
+🔹 Table Attributes (पुराने, सीखने के लिए)
+Attribute	काम
+border	Border दिखाना
+cellpadding	Cell के अंदर space
+cellspacing	Cells के बीच space
+align	Table align
+
+⚠️ Modern websites में CSS का use करें
+<hr>
+🔹 Summary
+
+📌 HTML Tables:
+
+Data को rows & columns में दिखाती हैं
+
+<table>, <tr>, <th>, <td> मुख्य tags
+
+colspan और rowspan से cells merge
+
+Styling के लिए CSS best है
+
+अगर चाहो तो मैं इसे PDF notes, practice questions, या real-life example (marksheet/table layout) के साथ भी बना दूँ 😊</div>
+</body>
+</html>
