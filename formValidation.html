@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 800px; color:chocolate; padding: auto; background-color: rgb(20, 236, 154);">HTML में Form Validation का मतलब होता है form submit होने से पहले यह जाँच करना कि user ने सही और पूरा data भरा है या नहीं।
+नीचे इसे आसान हिंदी में step-by-step समझाया गया है 👇
+
+🔹 Form Validation क्या है?
+
+Form Validation एक process है जिसमें:
+
+खाली field को रोका जाता है
+
+गलत email / password को रोका जाता है
+
+सही format में data भरवाया जाता है
+
+👉 ताकि गलत data server तक न जाए ❌
+
+🔹 Form Validation क्यों ज़रूरी है?
+
+✔ सही data मिलता है
+✔ User की गलती तुरंत पता चलती है
+✔ Server पर load कम होता है
+✔ Security बेहतर होती है
+<hr>
+🔹 HTML Form Validation (Built-in)
+
+HTML5 में without JavaScript validation होती है।
+
+🔹 1️⃣ required Attribute
+
+Field को खाली submit होने से रोकता है।<br>
+
+<input type="text" required>
+
+🔹 2️⃣ type Attribute Validation
+
+Browser खुद check करता है।<br><br>
+
+<input type="email" required>
+
+
+❌ गलत email डालने पर error दिखेगा<br><br>
+
+🔹 3️⃣ minlength और maxlength<br>
+<input type="password" minlength="6" maxlength="12"><br><br>
+<hr>
+🔹 4️⃣ pattern Attribute<br>
+
+Regular Expression से validation।<br><br>
+
+<input type="text" pattern="[0-9]{10}" 
+placeholder="10 digit mobile number"><br><br>
+<hr>
+🔹 5️⃣ min और max<br>
+<input type="number" min="18" max="60"><br
+
+🔹 6️⃣ placeholder (Hint के लिए)<br>
+<input type="text" placeholder="अपना नाम लिखें">
+<hr>
+🔹 Complete Form Validation Example
+<form>
+  <label>नाम:</label>
+  <input type="text" required><br><br>
+
+  <label>Email:</label>
+  <input type="email" required><br><br>
+
+  <label>Password:</label>
+  <input type="password" minlength="6" required><br><br>
+
+  <label>Mobile:</label>
+  <input type="text" pattern="[0-9]{10}" required><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+🔹 Client-Side vs Server-Side Validation
+Client-Side	Server-Side
+Browser में	Server में
+HTML / JS	Backend language
+Fast	Secure
+User friendly	Final check
+
+👉 Best Practice: दोनों साथ में
+
+🔹 novalidate Attribute
+
+अगर HTML validation बंद करनी हो:
+
+<form novalidate>
+
+🔹 Common Validation Attributes Summary
+Attribute	काम
+required	खाली नहीं
+type	format check
+minlength	minimum length
+maxlength	maximum length
+pattern	custom rule
+min / max	range
+🔹 Summary
+
+📌 Form Validation:
+
+गलत data को रोकती है
+
+HTML में बिना JS के possible
+
+User experience बेहतर बनाती है
+
+अगर चाहो तो मैं अगला topic JavaScript Form Validation, interview questions, या PDF notes में भी समझा दूँ 😊</div>
+</body>
+</html>
